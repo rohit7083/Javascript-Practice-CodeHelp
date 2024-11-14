@@ -718,39 +718,55 @@ let obj = {
 // ================ Performance: Reflow && Repaint in JS ==============================
 
 
-const t1 = performance.now();
+// const t1 = performance.now();
 
-for (let i = 1; i <= 100; i++) {
-  // Create a new <p> element
-  let newp = document.createElement('p');
+// for (let i = 1; i <= 100; i++) {
+//   // Create a new <p> element
+//   let newp = document.createElement('p');
 
-  // Set the text content of the new <p> element
-  newp.textContent = "This is para " + i;
+//   // Set the text content of the new <p> element
+//   newp.textContent = "This is para " + i;
 
-  // Append the new <p> element to the body
-  document.body.appendChild(newp);
-}
+//   // Append the new <p> element to the body
+//   document.body.appendChild(newp);
+// }
 
-const t2 = performance.now();
-// console.log(t2)
-console.log("Total Time by code 1 :", (t2 - t1))
+// const t2 = performance.now();
+// // console.log(t2)
+// console.log("Total Time by code 1 :", (t2 - t1))
 
 
-//==== code 2 
-const t3 = performance.now();
+// //==== code 2 
+// const t3 = performance.now();
 
-let mydiv = document.createElement('div')
-for (let i = 1; i <= 100; i++) {
-  // Create a new <p> element
-  let newp = document.createElement('p');
+// let mydiv = document.createElement('div')
+// for (let i = 1; i <= 100; i++) {
+//   // Create a new <p> element
+//   let newp = document.createElement('p');
 
-  // Set the text content of the new <p> element
-  newp.textContent = "This is para " + i;
+//   // Set the text content of the new <p> element
+//   newp.textContent = "This is para " + i;
 
-  // Append the new <p> element to the body
-  document.body.appendChild(newp);
-}
-document.body.appendChild(mydiv)
+//   // Append the new <p> element to the body
+//   document.body.appendChild(newp);
+// }
+// document.body.appendChild(mydiv)
 
-const t4 = performance.now();
-console.log("Total Time by code 2 :", (t4 - t3))
+// const t4 = performance.now();
+// console.log("Total Time by code 2 :", (t4 - t3))
+
+
+// ====
+
+// let fragment = document.createDocumentFragment();
+// for (let i = 1; i < 100; i++) {
+//   let newp = document.createElement('h6')
+//   newp.textContent = "i am" + i * 100;
+//   // no reflow and repaint for the below line 
+//   fragment.appendChild(newp);
+// }
+
+// //below line will takes 1 reflow  and 1 repaint
+// document.body.appendChild(fragment);
+
+
