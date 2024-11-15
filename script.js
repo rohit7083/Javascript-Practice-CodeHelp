@@ -769,4 +769,156 @@ let obj = {
 // //below line will takes 1 reflow  and 1 repaint
 // document.body.appendChild(fragment);
 
+// ============= Promises ==========
+ 
 
+// let firstPromise=new Promise((resolve, reject)=>{
+//   console.log("Babber");
+//   reject(new Error("interna server error"))
+// });
+// =======
+// let firstPromise=new Promise((resolve, reject)=>{
+// setTimeout(function sayname(){
+//   console.log("My name is shiv")
+// },10000);
+// resolve(1);
+// })
+
+// ======
+
+// let promise1= new Promise((resolve,reject)=>{
+//   let success=true;
+//   if(success){
+//     resolve("Promises Fulfilled");
+
+//   }
+//   else{
+//     reject("proomise rejected");
+//   }
+// })
+
+// promise1.then((message)=>{
+//   console.log("first msz:=" +message);
+//   return "promises fullfilled second message";
+// }).then((message)=>{
+//   console.log("second msz:=="+message);
+//   return "promises fullfilled third message";
+  
+// }).then((message)=>{
+//   console.log("third message:=" +message);
+  
+// }).catch((error)=>{
+//   console.log(error);
+  
+// }).finally((message)=>{
+//   console.log("i am finally block");
+  
+// })
+
+// ========
+
+// let promise1=new Promise((resolve,reject)=>{
+//   setTimeout(resolve,1000,"first");
+// })
+// let promise2=new Promise((resolve,reject)=>{
+//   setTimeout(resolve,2000,"second");
+// })
+// let promise3=new Promise((resolve,reject)=>{
+//   setTimeout(reject,4000,"Third");
+// })
+
+// Promise.all([promise1,promise2,promise3])
+// .then((values)=>{
+//   console.log(values);
+  
+// }).catch((error)=>{
+//   console.log("error"+error);
+  
+// })
+
+// ===================
+
+
+// async function getData() {
+//   setTimeout(() => {
+//     console.log("im inside the set timeout block")
+//   }, 3000);
+// }
+// getData();
+
+// ========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ===== Excersice practice ==============================
+
+// let a = prompt("First number?", 1);
+// let b = prompt("Second number?", 2);
+
+
+// a=Number(a);
+// b=Number(b);
+
+// console.log(a + b); // 12
+
+// alert(+a+ +b) //method 2
+
+// ===== method 3 
+
+// let a = +prompt("First number?", 1);
+// let b = +prompt("Second number?", 2);
+
+// alert(a + b); // 3
+// ====
+// let age = prompt('age?', 18);
+
+// let message = 
+//   (age < 3) ? 'Hi, baby!' :
+//   (age < 18) ? 'Hello!' :
+//   (age < 100) ? 'Greetings!' :
+//   'What an unusual age!';
+
+
+// console.log( message );
+// ======
+// let a=5;b=1;
+// let result = (a+b<4) ? "below" : "over" ;
+// console.log(result);
+
+// ======
+// let login="director";
+// let message=(login=="employee")? "hello":
+//            (login=='director')?"greeting":
+//            (login=='')?'no login':"error";
+
+//            console.log(message);
+           
+// ========
+// let man=prompt(("who is there ?"));
+
+//  if(man=="admin"){
+//   let pass=prompt("enter Your pass:");
+//   if (pass=="themaster") {
+//     console.log("Wellcome bro wellcomme");
+//   }
+//   else {
+//     console.log("get out from here nallla")
+//   }
+ 
+// }
+// else {
+//   console.log("i dont know you");
+  
+// }
