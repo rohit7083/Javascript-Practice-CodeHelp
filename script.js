@@ -846,23 +846,63 @@ let obj = {
 // }
 // getData();
 
-// ========
+// ========  
+
+// async function getdata() {
+//   let response=await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//   let data= await response.json();
+//   console.log(data);
+// }
+// getdata();
+ 
+
+// ============ insert data
+
+// const myHeaders=new Headers();
+// myHeaders.append("Content-Type","application/json");
+
+// const url="https://jsonplaceholder.typicode.com/posts";
+
+// const options ={
+//   method:"POST",
+//   body:JSON.stringify({username:"Mauresh vanjale"}),
+//   headers:myHeaders,
+// };
+
+// async function postData(){
+//   const response=await fetch(url,options);
+//   let data=await response.json();
+//   console.log("Post data response :" , data)
+// }
+
+
+// async function processData(){
+//   await postData();
+// // await getData();
+// }
+
+// processData();
+
+// ============= clouser in  javascript ===============
+
+// let name="manish";
+// function outerFunction(){
+//   let name="mahersh"; //let -> block scoped
+
+//   function innerFunction(){
+//     let name="ROhit"
+//     console.log(name);
+    
+//   }
+
+//   innerFunction();
+// }
+
+// outerFunction();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// ===== Excersice practice ==============================
+// ============================== Excersice practice ==============================
 
 // let a = prompt("First number?", 1);
 // let b = prompt("Second number?", 2);
@@ -922,3 +962,18 @@ let obj = {
 //   console.log("i dont know you");
   
 // }
+
+// =======
+// function checkAge(age){
+//  return (age>18) ? true: confirm("below age not aloowed");
+// }
+
+// checkAge(5);
+// ===========
+
+
+// function myfunc(num){
+//   return num**num;
+// }
+
+// console.log( myfunc(2));
