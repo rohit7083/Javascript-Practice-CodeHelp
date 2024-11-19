@@ -6,15 +6,13 @@
 // console.log(newsent2)
 
 
-// functions and arrow functions
+// // functions and arrow functions
 
 // function myfunc() {
 //   for (let i = 0; i < 10; i++) {
 //     console.log(i)
 //   }
 // }
-
-
 // myfunc()
 
 // function getSum(a, b, c) {
@@ -342,9 +340,6 @@ let arr5 = [9, 1, 7, 4, 2, 8]
 
 
 // ====== inbuilt function =========
-
-
-
 
 let curr = new Date();
 
@@ -691,7 +686,8 @@ let obj = {
 
 // const employees = ['Ron', 'April', 'Andy', 'Leslie'];
 
-// Object.getPrototypeOf(employees);
+// console.log(
+//  Object.getPrototypeOf(employees));
 
 // ========= All about Events & Listeners in JS ==============
 
@@ -702,6 +698,16 @@ let obj = {
 
 // let myhead = document.getElementById("myid");
 // myhead.addEventListener('click', changeText);
+
+function chnagemytext()
+{
+let func=document.getElementById("myid")
+func.textContent="hello sujixa";
+}
+
+let func=document.getElementById("myid")
+func.addEventListener('click',chnagemytext)
+
 
 // remove event listner
 
